@@ -1,9 +1,6 @@
 import type { Config } from "tailwindcss";
 
-const environment = process.env.NODE_ENV;
-
 const config: Config = {
-  basePath: environment === "production" ? '/nextjs' : '',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
