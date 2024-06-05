@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    basePath: "/next"
-};
 
-export default nextConfig;
+const nextConfig = {
+    basePath: '/nextjs',
+  };
+  
+module.exports = nextConfig;
