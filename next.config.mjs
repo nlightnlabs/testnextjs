@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
+
+const environment = process.env.NODE_ENV;
+
 const nextConfig = {
-    basePath: '/nextjs'
+    basePath: environment === "production" ? '/nextjs' : '',
 };
 
 export default nextConfig;
